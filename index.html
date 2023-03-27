@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Landing page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCPhk0ylqjEH5vEZq3HrLHashe8DZ3ourY",
+          authDomain: "webngunghia.firebaseapp.com",
+          databaseURL: "https://webngunghia-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "webngunghia",
+          storageBucket: "webngunghia.appspot.com",
+          messagingSenderId: "332392275605",
+          appId: "1:332392275605:web:856fbcd0ad82c44ef8459c",
+          measurementId: "G-0Y4C512H1K"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</head>
+<body>
+    <!-- <header>   
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Work</a></li>
+
+            <li> <a href="#">Contact</a></li>
+        </ul>
+    </header> -->
+    <section>
+        <img src="./img/stars.png" id="stars">
+        <img src="./img/moon.png" id="moon">
+        <img src="./img/mountains_behind.png" id="behind">
+        <h2 id="text">Hello World</h2>
+        <a href="#" id="btn">Explore</a>
+        <img src="./img/mountains_front.png" id="front">
+        
+    </section>
+    <div class="sec">
+        <h2>Mô tả về đề tài</h2>
+        <p>Đề tài của nhóm là một hệ thống web để quản lý văn bằng. Trong đó có sử dụng công nghệ blockchain của web 3.0 để mã hoá, lưu trữ các loại văn bằng</p>
+    </div>
+
+    
+    <div class="sec" data-aos="fade-up" data-aos-duration="1500">
+        <h2>Các công nghệ nhóm dự định sử dụng:</h2>
+        <ul>
+            <li>Front-end: VueJS</li>
+            <li>Backend: Nodejs</li>
+            <li>Blockchain</li>
+        </ul>
+    </div>
+
+    <div class="sec" data-aos="fade-up" data-aos-duration="1500">
+        <h2>Các trang web liên quan:</h2>
+        <ul>
+            <li><a href="http://vbcc.csdl.edu.vn/" target="_blank">http://vbcc.csdl.edu.vn/ </a></li>
+            
+            <li><p class="whitespace-pre-wrap">
+-	Chức năng: tra cứu văn bằng, chứng chỉ, các tin tức, thông tin liên quan. 
+-	Ưu điểm: 
+    + Giao diện đơn giản, các nội dung rõ ràng, cụ thể, người dùng dễ dàng thực hiện tra cứu văn bằng chứng chỉ.
+    + Cung cấp các thông tin, cập nhật thông tin liên tục cho người dùng.
+    + Người dùng có để đăng ký tài khoản để sử dụng dễ dàng và tương tác với trang hệ thống.
+-	Nhược điểm: 
+    + Chỉ áp dụng đối với đối tượng là học sinh, sinh viên.
+    + Không có chức năng người dùng lưu lại bản sao văn bằng chứng chỉ của họ.
+                </p>
+            </li>
+
+            <li><a href="https://naric.edu.vn/" target="_blank">https://naric.edu.vn</a></li>
+            
+            <li><p class="whitespace-pre-wrap">
+-	Chức năng: Tra cứu văn bằng, xin cấp văn bằng và chứng nhận văn bằng trong nước và quốc tế, có quy trính hướng dẫn chi tiết cho người dùng. Cập nhật những tin tức liên quan.
+-	Ưu điểm:
+    + Giao diện đẹp, các chức năng rõ ràng, dễ sử dụng.
+    + Không cần đăng ký, đăng nhập để sử dụng.
+    + Người dùng có thể tra cứu thông tin bằng tìm kiếm từ khóa.
+    + Có góc góp ý về trải nghiệm người dùng.
+-	Nhược điểm:
+    + Chỉ dùng để chứng nhận văn bằng, không có chức năng cho người dùng quản lí văn bằng của họ.
+                
+                </p>
+            </li>
+
+
+
+           
+        </ul>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
